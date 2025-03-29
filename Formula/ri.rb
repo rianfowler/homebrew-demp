@@ -5,21 +5,21 @@
 class Ri < Formula
   desc "A CLI tool for doing X, Y, and Z."
   homepage "https://github.com/rianfowler/ri"
-  version "0.0.22"
+  version "0.0.23"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rianfowler/ri/releases/download/v0.0.22/ri_0.0.22_darwin_amd64.tar.gz"
-      sha256 "9ddf5c5bf007503ab8846b0c700fbc43d563d4c8ed04136b9265169daa2ab580"
+      url "https://github.com/rianfowler/ri/releases/download/v0.0.23/ri_0.0.23_darwin_amd64.tar.gz"
+      sha256 "6060d680bf2e3ecee5a6b36b17f76ccef4c8072fe352fba299c91ce5f0bcb71d"
 
       def install
         bin.install "ri"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rianfowler/ri/releases/download/v0.0.22/ri_0.0.22_darwin_arm64.tar.gz"
-      sha256 "2b9717faf075740cef80ac4b68f99268506d6b83827fec9a475bc99e4e538da2"
+      url "https://github.com/rianfowler/ri/releases/download/v0.0.23/ri_0.0.23_darwin_arm64.tar.gz"
+      sha256 "187e14737e681759a9f07a0d4d3a44065ac5155f855b402d53cc627a63b5b380"
 
       def install
         bin.install "ri"
@@ -30,8 +30,8 @@ class Ri < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/rianfowler/ri/releases/download/v0.0.22/ri_0.0.22_linux_amd64.tar.gz"
-        sha256 "c263eda635981072959dc5de73fcba90981ae98702d71cb58bcf410b62bac6a3"
+        url "https://github.com/rianfowler/ri/releases/download/v0.0.23/ri_0.0.23_linux_amd64.tar.gz"
+        sha256 "43a2cd815c790fbc72bdacb46d83794caa830d8bde692c42e1da9be95694f85a"
 
         def install
           bin.install "ri"
@@ -40,8 +40,8 @@ class Ri < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/rianfowler/ri/releases/download/v0.0.22/ri_0.0.22_linux_arm64.tar.gz"
-        sha256 "8c3baa0e59850043c495afbdf79129b9f79343fea51b660d2e491ea8c1f456cf"
+        url "https://github.com/rianfowler/ri/releases/download/v0.0.23/ri_0.0.23_linux_arm64.tar.gz"
+        sha256 "8784e8019843eb72e250abc265c49fe57120c6a2506d8e3fd0061c2802645bf3"
 
         def install
           bin.install "ri"
