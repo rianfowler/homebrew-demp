@@ -1,1 +1,1 @@
-# ri-brew
+# homebrew-ri
