@@ -5,21 +5,21 @@
 class Demp < Formula
   desc "A CLI tool for doing X, Y, and Z."
   homepage "https://github.com/rianfowler/demp"
-  version "0.1.11"
+  version "0.1.12"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rianfowler/demp/releases/download/v0.1.11/demp_0.1.11_darwin_amd64.tar.gz"
-      sha256 "51b90340fd60ea84cda94e2d93b8005ef0d4e4c2907d3583caaa6c756eb42455"
+      url "https://github.com/rianfowler/demp/releases/download/v0.1.12/demp_0.1.12_darwin_amd64.tar.gz"
+      sha256 "0e18063a029a837ade2ccbde51973bca3fe5d3f96f4386dda61233ced45a7454"
 
       def install
         bin.install "demp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rianfowler/demp/releases/download/v0.1.11/demp_0.1.11_darwin_arm64.tar.gz"
-      sha256 "59dee60aa488d3280d6e66828d84c919fa96f46348375da04020ef8e16e11db3"
+      url "https://github.com/rianfowler/demp/releases/download/v0.1.12/demp_0.1.12_darwin_arm64.tar.gz"
+      sha256 "0aaa56cd703b3748dabec981aa1d4740ba7612a92f76f274c6fe9b2976f1bdd4"
 
       def install
         bin.install "demp"
@@ -30,8 +30,8 @@ class Demp < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/rianfowler/demp/releases/download/v0.1.11/demp_0.1.11_linux_amd64.tar.gz"
-        sha256 "827a0fe426e6ac2276444d7cf8956921159f707425db443904603c09e141d11e"
+        url "https://github.com/rianfowler/demp/releases/download/v0.1.12/demp_0.1.12_linux_amd64.tar.gz"
+        sha256 "15d0501be9654e230ce6bcf54f80dcde2d836ac779a4a3c1a97ea4faf0253d57"
 
         def install
           bin.install "demp"
@@ -40,8 +40,8 @@ class Demp < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/rianfowler/demp/releases/download/v0.1.11/demp_0.1.11_linux_arm64.tar.gz"
-        sha256 "d497fba0fcf3c5062768fed6c859faf1db461c652c93eaffee932a1594810c29"
+        url "https://github.com/rianfowler/demp/releases/download/v0.1.12/demp_0.1.12_linux_arm64.tar.gz"
+        sha256 "fa30baef489bfddb5d39fa80845c9d2fdc3e49e41bf23eec20ca3880bfa57861"
 
         def install
           bin.install "demp"
