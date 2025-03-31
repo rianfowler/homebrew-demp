@@ -11,7 +11,7 @@ class Demp < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/rianfowler/demp/releases/download/v0.1.20/demp_0.1.20_darwin_amd64.tar.gz"
-      sha256 "cd5c5ad7a27970dbdab1e31f6ea9bb4f6015ec3a3f75067ea24495ffca52fcfd"
+      sha256 "1720b01c178244e84f2390842efb2fc58b1409166f6a17085e851904e3896d05"
 
       def install
         bin.install "demp"
@@ -19,7 +19,7 @@ class Demp < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/rianfowler/demp/releases/download/v0.1.20/demp_0.1.20_darwin_arm64.tar.gz"
-      sha256 "be6cebdf9033e51de89578cc5e7531b4c529d67f81d92b9c12ebf049c3a35e82"
+      sha256 "02f436e2ba46fb63185d8a6e9499cc6fef1203b51b6bf9619cc8b72c917524f6"
 
       def install
         bin.install "demp"
@@ -31,7 +31,7 @@ class Demp < Formula
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/rianfowler/demp/releases/download/v0.1.20/demp_0.1.20_linux_amd64.tar.gz"
-        sha256 "b09407b499b015a5157b7218536c0ed7c04533397f7bde0ae541d2aa61a541e2"
+        sha256 "6c433517f398ec1966b229bce3f398e61ea5f0f0e0334bc233e8f0e97a29f3d0"
 
         def install
           bin.install "demp"
@@ -41,7 +41,7 @@ class Demp < Formula
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/rianfowler/demp/releases/download/v0.1.20/demp_0.1.20_linux_arm64.tar.gz"
-        sha256 "7c607281bef7a26ff04620907044c3bed5dd6a1a863fd70f1551601039ba4e41"
+        sha256 "8c6fb47a2de8e9445019a8e9c318a8673483adf2c83793468c6b0a6f6bd497c9"
 
         def install
           bin.install "demp"
